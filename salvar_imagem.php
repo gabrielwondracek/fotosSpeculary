@@ -19,7 +19,7 @@
         
         // As linhas abaixo você usará sempre que quiser mostrar a imagem
 
-        $comando = $pdo->prepare("SELECT * FROM alunos WHERE login=’$login’");
+        $comando = $pdo->prepare("SELECT * FROM alunos WHERE login='$login'");
 		$resultado = $comando->execute();
         while( $linhas = $comando->fetch() )
         {
